@@ -109,7 +109,7 @@ max_alphabet = alphabet_array[0] # 1개의 공간을 사용
 for alphabet in alphabet_array:
     occurrence = 0; # 1개의 공간을 사용
 
-29개의 공간을 필요로 하는 로직이다.
+'29' 만큼의 공간을 사용 했다.
 
 ```  
 두번째 방법
@@ -117,10 +117,48 @@ for alphabet in alphabet_array:
 - [최빈값 찾기](Algorithm/ex02/FindMaxOccurredAlphabet.java)
     
 ``` java  
+class FindMaxOccurredAlphabet {
+
+    public static String findMaxOccurredAlphabet(String string) {
+
+        int[] count = new int[26]; // 26개
+        for (char c : string.toCharArray()) {
+            if (c >= 'a' && c<= 'z') {
+                int index = c - 'a'; // 1개
+                count[index]++;
+            }
+        }
+
+        int maxIndexNum = 0; // 1개
+
+        for (int i = 1; i <count.length ; i++) {
+            if (count[i] > count[maxIndexNum]) {
+                maxIndexNum = i; // 1개
+            }
+        }
+
+        // System.out.println("가장 큰 값을 가진 인덱스: " + maxIndexNum);
+
+        char result = (char)(maxIndexNum + 'a'); // 1개
+
+        // System.out.println("최종 변환 문자"+result);
+
+        return String.valueOf(result);
+    }
+
+총 '30' 만큼의 공간을 사용 했다.
 
 ```    
-  
 
-       
+'아 공간을 적게 썼으니 첫번째 방법이 훨씬 효율적이구나'라고 생각 할 수 있다.  
+  
+아니라고 말할 수 있다.  
+29와 30은 모두 상수이고 대부분의 문제에서 알고리즘의 성능이 *공간에 의해서 결정 되지 않는다.*
+공간을 N^2, N^3 처럼 쓸 경우에는 이야기가 조금 달라지지만    
+대부분의 문제를 해결할 때는 공간 복잡도 보다는 시간 복잡도를 더 신경 써야 한다.  
+
+
+        
+          
 # 2. CS 지식
 
