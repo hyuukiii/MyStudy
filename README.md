@@ -1,7 +1,7 @@
 # 1. 알고리즘 문제 풀이
 - [배열에서 최댓값 구하기](Algorithm/ex01/my/FindMaxNum.java)
 - [최빈값 찾기](Algorithm/ex02/FindMaxOccurredAlphabet.java)
-  
+- [최빈값 찾기](Algorithm/ex03/FindMaxOccurredAlphabet.java)  
   
 ## 시간복잡도란?  
     입력값에 비해서 얼마나 일을 수행 해야하는가?를 뜻한다.  
