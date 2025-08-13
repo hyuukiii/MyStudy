@@ -31,11 +31,8 @@ class FindMaxOccurredAlphabet {
         }
         // System.out.println("가장 큰 값을 가진 인덱스: " + maxIndexNum);
 
-        // 4. 해당 인덱스를 문자로 변환한다.
-        // ⭐️ int는 char보다 큰 자료형이기에 자바는 명시적 캐스팅이 필요하다. 알고 있지만 한번 더 복습 하자.
-        // 첫 순회 했을 떄의 결과를 예로들면 현재 maxIndex값은 8이다 이걸 a = 97과 더해주면 105라는 값이 나오는데
-        // 이는 아스키코드에서 i인것을 알 수 있다.
-        char result = (char)(maxIndexNum + 'a');
+        // 4. 해당 인덱스를 문자로 변환한다. ==> 첫 순회 했을 떄의 결과를 예로들면 현재 maxIndex값은 8이다 이걸 a = 97과 더해주면 105라는 값이 나오는데 ==> 이는 아스키코드에서 i인것을 알 수 있다.
+        char result = (char)(maxIndexNum + 'a'); // ⭐️ int는 char보다 큰 자료형이기에 자바는 명시적캐스팅이 필요로 하기 떄문에 다운 캐스팅을 해줘야한다. 알고 있지만 한번 더 복습 하자.
 
         // System.out.println("최종 변환 문자"+result);
 
@@ -54,8 +51,8 @@ class FindMaxOccurredAlphabet {
 /* count 배열에 index의 값을 증가시켜 주는 이유?
 
                     char c = 'h';
-                    System.out.println((int)c); // h는 104
-                    int index = c - 'a'; //a는 아스키코드로 97 즉 빼면 7이 나온다
-
-                    즉 배열의 7번 째 인덱스 값에 증가를 해주기 위해서 이다.
+                    System.out.println((int)c); // h는 아스키코드로 104가 나오는걸 확인 할 수 있다.
+                    int index = c - 'a'; // a는 아스키코드로 97 즉, a와 h를 빼면 7이 나온다.
+                    count[index]++; // 배열의 7번 째 인덱스 값에 증가를 해준다.
+                    
 */
