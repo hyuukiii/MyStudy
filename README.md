@@ -52,9 +52,37 @@ if (isMaxNum) { // 비교 연산 1번 실행
 만큼의 시간이 필요하다고 말할 수 있다.
 
 그럼 최종적으로
-' 2 * N² + N '
+' 2 * N² + N '  == O(n²)
 만큼의 시간이 걸렸다고 말할 수 있다.
 
 ```
 
+그럼 내가 풀었던 코드로 시간 복잡도를 계산 해보자.
+  
+``` java  
+public void find_max_num1() {
 
+        for (int data1Arrays : data1) { // array의 길이 만큼 연산 실행
+            System.out.print(data1Arrays+", ");
+        }
+
+
+        int MaxIndex = 0;
+        for (int i = 1; i < data1.length ; i++) { // array의 길이만큼 연산 실행
+            if (data1[MaxIndex] < data1[i]) { //비교 연산 1번 실행
+                MaxIndex = i; // 대입 연산 1번 실행
+            }
+        }
+
+' 2N - 1 '  == O(n)
+
+라는 시간 복잡도가 나온다
+```
+첫번쨰 알고리즘과 두번째 알고리즘의 성능차이는 많이 날 것이다.  
+  
+왜냐 N이 1000이라고 가정 했을 떄
+
+첫번째 알고리즘 : 1,000,000
+두번째 알고리즘 : 1,000
+
+라는 결론값이 나오기 때문이다.
