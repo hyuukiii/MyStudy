@@ -2,7 +2,8 @@
 - [배열에서 최댓값 구하기](Algorithm/ex01/my/FindMaxNum.java)
 - [최빈값 찾기](Algorithm/ex02/FindMaxOccurredAlphabet.java)
 - [배열에 원하는 값을 true,false로 반환하기](Algorithm/ex03/my/IsNumberExist.java)  
-  
+- [배열 사이에 +,* 연산자 넣어서 최댓값 출력하기](Algorithm/ex04/MaxPlusOrMultiply.java)
+- [문자열에서 반복되지 않는 제일 첫번째로 만나는 문자 출력하기](Algorithm/ex04/NotRepeatingCharacter.java)    
 ## 시간복잡도란?  
     입력값에 비해서 얼마나 일을 수행 해야하는가?를 뜻한다.  
   
