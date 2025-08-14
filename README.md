@@ -5,7 +5,7 @@
 - [배열 사이에 +,* 연산자 넣어서 최댓값 출력하기](Algorithm/ex04/MaxPlusOrMultiply.java)
 - [문자열에서 반복되지 않는 제일 첫번째로 만나는 문자 출력하기](Algorithm/ex04/NotRepeatingCharacter.java)
 - [소수 구하기, O(N^2).ver](Algorithm/ex05/PrimeFinder.java)
-- [소수 구하기, O(N^N.ver](Algorithm/ex04/NotRepeatingCharacter.java)
+- [소수 구하기, O(N^N.ver](Algorithm/ex05/optimizePrimeFinder.java)
 - [그룹 변화 감지,문자열 뒤집기](Algorithm/ex04/NotRepeatingCharacter.java)
 ## 시간복잡도란?  
     입력값에 비해서 얼마나 일을 수행 해야하는가?를 뜻한다.  
