@@ -9,9 +9,10 @@
 - [그룹 변화 감지,문자열 뒤집기](Algorithm/ex06/FlipToSame.java)
     
 ## 링크드 리스트 직접 구현해보기     
-- [링크드리스트 핵심](Algorithm/ex01/my/FindMaxNum.java)
-- [링크드리스트 노드 추가하기](Algorithm/ex01/my/FindMaxNum.java)
-- [링크드리스트 삭제](Algorithm/ex01/my/FindMaxNum.java)
+- [링크드 리스트 기본](Algorithm/ex07/LinkedListAppend.java)
+- [링크드 리스트 원하는 노드 가져오기](Algorithm/ex07/LinkedListGetNode.java)
+- [링크드 리스트 노드 추가](Algorithm/ex07/LinkedListAddNode.java)
+- [링크드 리스트 노드 삭제](Algorithm/ex07/LinkedListDeleteNode.java)
    
     
 ## 시간복잡도란?  
