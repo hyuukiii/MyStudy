@@ -8,9 +8,9 @@
 - [소수 구하기, O(N^N).ver](Algorithm/ex05/optimizePrimeFinder.java)
 - [그룹 변화 감지,문자열 뒤집기](Algorithm/ex06/FlipToSame.java)
     
-     
-- [링크드리스트 기본](Algorithm/ex01/my/FindMaxNum.java)
-- [링크드리스트 0번째추가, 중간 노드에 삽입](Algorithm/ex01/my/FindMaxNum.java)
+## 링크드 리스트 직접 구현해보기     
+- [링크드리스트 핵심](Algorithm/ex01/my/FindMaxNum.java)
+- [링크드리스트 노드 추가하기](Algorithm/ex01/my/FindMaxNum.java)
 - [링크드리스트 삭제](Algorithm/ex01/my/FindMaxNum.java)
    
     
