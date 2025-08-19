@@ -5,8 +5,13 @@
 - [배열 사이에 +,* 연산자 넣어서 최댓값 출력하기](Algorithm/ex04/MaxPlusOrMultiply.java)
 - [문자열에서 반복되지 않는 제일 첫번째로 만나는 문자 출력하기](Algorithm/ex04/NotRepeatingCharacter.java)
 - [소수 구하기, O(N^2).ver](Algorithm/ex05/PrimeFinder.java)
-- [소수 구하기, O(N^N.ver](Algorithm/ex05/optimizePrimeFinder.java)
-- [그룹 변화 감지,문자열 뒤집기](Algorithm/ex06/FlipToSame.java)
+- [소수 구하기, O(N^N).ver](Algorithm/ex05/optimizePrimeFinder.java)
+- [그룹 변화 감지,문자열 뒤집기](Algorithm/ex06/FlipToSame.java)  
+
+  
+- [링크드리스트 기본](Algorithm/ex01/my/FindMaxNum.java)
+- [링크드리스트 0번째추가, 중간 노드에 삽입](Algorithm/ex01/my/FindMaxNum.java)
+- [링크드리스트 삭제](Algorithm/ex01/my/FindMaxNum.java)
    
     
 ## 시간복잡도란?  
@@ -228,7 +233,40 @@ class IsNumberExist {
 | 특정 원소 조회 | O(1) | O(N) |
 | 중간에 삽입 삭제 | O(N) | O(1) |
 | 데이터 추가 | 데이터 추가 시 모든 공간이 다 차버렸다면 새로운 메모리 공간을 할당받아야 한다 | 모든 공간이 다 찼어도 맨 뒤의 노드만 동적으로 추가하면 된다. |
-| 정리 | 데이터에 접근하는 경우가 빈번하다면 Array를 사용하자 | 삽입과 삭제가 빈번하다면 LinkedList를 사용하는 것이 좋다. |
+| 정리 | 데이터에 접근하는 경우가 빈번하다면 Array를 사용하자 | 삽입과 삭제가 빈번하다면 LinkedList를 사용하는 것이 좋다. |  
+
+
+리스트에서는 세가지의 정보가 필요하다  
+1. 노드 안에 있는 데이터
+2. 노드가 어떤 노드를 가르켜야하는지
+3. 시작점이 어디 인지
+``` java
+   static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    Node head;
+```
+data = 각 노드마다 저장할 값이 다르기 때문에 외부에서 받아왔음.
+next = 각 노드들은 어디를 가르킬지는 모르기 때문에 동적인 할당을 위해 null로 지정했다.   
+head = 첫 노드의 시작점이다.
+  
+``` java
+   
+```
+
+  
+``` java
+   
+```
+    
+  
           
 # 2. CS 지식
 
