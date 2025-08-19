@@ -6,9 +6,9 @@
 - [문자열에서 반복되지 않는 제일 첫번째로 만나는 문자 출력하기](Algorithm/ex04/NotRepeatingCharacter.java)
 - [소수 구하기, O(N^2).ver](Algorithm/ex05/PrimeFinder.java)
 - [소수 구하기, O(N^N).ver](Algorithm/ex05/optimizePrimeFinder.java)
-- [그룹 변화 감지,문자열 뒤집기](Algorithm/ex06/FlipToSame.java)  
-
-  
+- [그룹 변화 감지,문자열 뒤집기](Algorithm/ex06/FlipToSame.java)
+    
+     
 - [링크드리스트 기본](Algorithm/ex01/my/FindMaxNum.java)
 - [링크드리스트 0번째추가, 중간 노드에 삽입](Algorithm/ex01/my/FindMaxNum.java)
 - [링크드리스트 삭제](Algorithm/ex01/my/FindMaxNum.java)
@@ -253,19 +253,44 @@ class IsNumberExist {
 
     Node head;
 ```
-data = 각 노드마다 저장할 값이 다르기 때문에 외부에서 받아왔음.
-next = 각 노드들은 어디를 가르킬지는 모르기 때문에 동적인 할당을 위해 null로 지정했다.   
-head = 첫 노드의 시작점이다.
-  
+data = 각 노드마다 저장할 값이 다르기 때문에 외부에서 받아왔음.  
+next = 각 노드들은 어디를 가르킬지는 모르기 때문에 동적인 할당을 위해 null로 지정했다.     
+head = 첫 노드의 시작점이다.  
+
+
+리스트를 만들 떄 첫번 째 노드를 생성 하는 메서드    
 ``` java
-   
+   public void LinkedListAppend(int value) {
+      this.head = new Node(value);
+}
+```  
+💡 빈 배열로 만드는 것이 더 바람직하다  
+``` java
+LinkedList<Inteager> list = new LinkedList<>();
 ```
 
-  
+리스트 끝에 새로운 노드를 추가해주는 메서드
 ``` java
-   
-```
-    
+   public void LinkedListAppend(int value) {
+   Node cur = this.head;
+
+   while(cur.next != null) {
+      cur = cur.next;
+   }
+    cur.next = new Node(value);
+}
+
+예시: [5] --> [12] --> null
+null 자리에 3을 추가 할려고 한다.
+
+초기 : cur = 5
+1번째 반복 :  cur.next = 노드 [12] (≠ null) → cur = 노드 [12]로 이동
+2번째 반복 :  cur.next = 12 , cur.next == null 반복 종료
+결과: cur.next = null (= null) → 루프 종료
+실행: cur.next = new node[3] ✅
+```  
+
+
   
           
 # 2. CS 지식
