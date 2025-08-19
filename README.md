@@ -13,7 +13,7 @@
 - [링크드 리스트 원하는 노드 가져오기](Algorithm/ex07/LinkedListGetNode.java)
 - [링크드 리스트 노드 추가](Algorithm/ex07/LinkedListAddNode.java)
 - [링크드 리스트 노드 삭제](Algorithm/ex07/LinkedListDeleteNode.java)
-   
+- [링크드 리스트 합계 구하기](Algorithm/ex08/LinkedListSum.java)  
     
 ## 시간복잡도란?  
     입력값에 비해서 얼마나 일을 수행 해야하는가?를 뜻한다.  
